@@ -17,8 +17,9 @@ public class ChildActivityModule {
     return strings;
   }
 
+  /*TODO: check if this one should be scoped and if need to create a childscope*/
   @Provides
-  @Singleton ChildPresenter providePresenter() {
+  ChildPresenter providePresenter() {
     ChildPresenter presenter = new ChildPresenter();
     DIManager.getActivityComponent().inject(presenter);
     // TODO test presenter

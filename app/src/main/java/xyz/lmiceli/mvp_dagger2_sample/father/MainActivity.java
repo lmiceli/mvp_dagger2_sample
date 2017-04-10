@@ -14,7 +14,7 @@ import xyz.lmiceli.mvp_dagger2_sample.son.ChildActivityModule;
 public class MainActivity extends AppCompatActivity implements Injectable {
 
   @Inject String saludo;
-  @Inject List<String> todos;
+  //@Inject List<String> todos;
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
